@@ -1,25 +1,31 @@
 <!DOCTYPE>
 <html>
    <head><h1><b>
-       Date Sort!!!
+       Date Sort
    </h1></head>
    <body style = "background-color: purple">
    </br><div style="font-size:200%";>
       Enter An Event
       </br></br>
-      What? :<input type="text" id="eventName"/>
+      What's the Event? :<input type="text" id="eventName"/>
       </br></br>
-      <button onclick="DateSorter()"> Sort Your Date! </button>
+      Where's the Event?:<input type="text" id="eventName"/>
+    </br></br>
+      When's the Event?:<input type="text" id="eventName"/>
+    </br></br>
+      Who's going?:<input type="text" id="eventName"/>
+    </br></br>
+      <button onclick="EvWhat()"> Sort Your Date! </button>
           </b></div>
    </br>
    <script>
-      function DateSorter()
+      function EvWhat()
       {
          var eventWhat=document.getElementById("eventName")
          return result
      }
-     
-
+     eventWhat=EvWhat()
+     console.log(eventWhat)
    </script>
    </body>
 </html>
