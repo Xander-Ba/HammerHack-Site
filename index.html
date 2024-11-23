@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html>
+   <head><h1><b>
+       Date Sort
+   </h1></head>
+   <body>
+   </br><div style="font-size:200%"; style="background-color:#a32cb0"; >
+      Enter An Event
+      </br></br>
+      What? :<input type="text" id="eventName"/>
+      </br>
+      Who?:<input type="text" id="eventPeople"/>
+      </br>
+      When?:<input type ="text" id="eventDate"/>
+      </br>
+      Where?:<input type="text" id="eventLocation"/>
+      </br></br>
+      <button onclick="DateSorter()"> Sort Your Date! </button>
+      </b></div>
+    <div id="result"></div>
+   </br>
+   <script>
+      function DateSorter()
+      {
+         var eventWhat:document.getElementById("eventName").value;document.getElementById("result").innerHTML="Your event is " + eventWhat + ".";
+      }
+   </script>
+   </body>
+</html>
