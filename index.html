@@ -17,13 +17,16 @@
       </br></br>
       <button onclick="DateSorter()"> Sort Your Date! </button>
       </b></div>
-    <div id="result"></div>
    </br>
    <script>
       function DateSorter()
       {
-         var eventWhat:document.getElementById("eventName").value;document.getElementById("result").innerHTML="Your event is " + eventWhat + ".";
-      }
+         var eventWhat=document.getElementById("eventName").value
+         var eventWhen=document.getElementById("eventPeople").value
+         var eventWhere=document.getElementById("eventLocation").value
+         var eventWho=document.getElementById("eventPeople").value
+         "The event " + eventWhat + " is on the date " + eventWhen + " with " + eventWho + " at " + eventWhere + "."
+     }
    </script>
    </body>
 </html>
